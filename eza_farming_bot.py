@@ -226,7 +226,7 @@ class EZA():
         if result[0]:
             return int(result.split()[0])
         cropped_image.save(f"ERROR_{datetime.datetime.now()}.jpeg")
-        quit("Unknow Eza level")
+        quit("Unknown Eza level")
     
     def Swipe(self):
         x , y = self.device.window_size()
@@ -281,7 +281,7 @@ def start(debug:bool):
                 if not eza.Cancel(trys=1,raise_error=False):
                     eza.OK()
                     eza.OK(trys=2,raise_error=False)
-                sleep(1.5)
+                sleep(5)
                 eza.click_center_screen()
                 n+=1
                 os.system('cls' if os.name == 'nt' else 'clear')  
@@ -302,7 +302,8 @@ def inf():
         n+=1
         sleep(0.5)
         eza.Fight()
-        sleep(1)
+        sleep(5)
+        eza.device.screenshot().save("a.png")
         eza.Start()
         sleep(1)
         if not eza.End(50):
