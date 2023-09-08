@@ -42,7 +42,7 @@ If you encounter any errors or have any doubts, you can create an issue or conta
 
 5. Download the zip that applies to your computer(OS) for adb [from this link](https://www.xda-developers.com/install-adb-windows-macos-linux/). Scroll down to find non-phone instructions and follow those instructions until you are inside the file path /platform-tools/ (restart your terminal before the next step). 
 
-6. In /platform-tools/ type in `adb connect localhost:your session number`, 'connected to localhost:your session number' should appear. Check using `adb devices` to check if your device is connected.
+6. In /platform-tools/ type in `adb connect localhost:your session number`. 'Connected to localhost:your session number' should appear, along with something about a daemon turning on at a tcp port. Check using `adb devices` to check if your device is connected.
 
 7. Your computer should have Python 3.x installed. You can download it from the [official Python website](https://www.python.org/downloads/).
 8. Install [tesseract](https://linuxhint.com/install-tesseract-windows/) in your computer
