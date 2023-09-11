@@ -274,7 +274,7 @@ def start(debug:bool):
                 sleep(1)
                 
                 if not eza.End(35):
-                    print("Batlle lost , change eza")
+                    print("Battle lost , change eza")
                     break 
                 sleep(1.5)
                 eza.OK()
@@ -308,7 +308,7 @@ def inf():
         eza.Start()
         sleep(1)
         if not eza.End(50):
-            print("Batlle lost")
+            print("Battle lost")
             break
         sleep(1.5)
         eza.OK()
