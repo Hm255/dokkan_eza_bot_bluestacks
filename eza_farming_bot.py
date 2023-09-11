@@ -316,7 +316,7 @@ def inf():
         if not eza.Cancel(trys=1,raise_error=False):
             eza.OK()
             eza.OK(trys=2,raise_error=False)
-        sleep(1)
+        sleep(3)
         eza.click_center_screen()
         os.system('cls' if os.name == 'nt' else 'clear')  
 
